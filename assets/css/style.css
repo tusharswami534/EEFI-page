@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+    font-family: Neue_Machina_Light;
+    src: url("../fonts/NeueMachina-Light.ttf");
+  }
+  @font-face {
+    font-family: NeueMachinaRegular;
+    src: url("../fonts/NeueMachina-Regular.ttf");
+  }
+  
+  @font-face {
+      font-family: Neue Machina Ultrabold;
+      src: url("../Font/PPNeueMachina-InktrapUltrabold.otf");
+    }
+    .ff-neue-machina-light {
+      font-family: Neue_Machina_Light;
+    }
+    
+    .ffNeueMachinaRegular {
+        font-family: NeueMachinaRegular;
+      }
+          
+      .Neue_Machina_Ultra_bold{
+        font-family: Neue Machina Ultrabold;
+      }
+
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+.Plus_jakarta_font{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
