@@ -24,30 +24,67 @@
       },
     };
   </script>
+   <meta name="title" content="EEFI" />
+   <meta name="description" content="" />
+ 
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://eefi-58799.web.app/" />
+   <meta property="og:title" content="EEFI" />
+   <meta property="og:description" content="" />
+   <meta property="og:image" content="/mete-icon.png" />
+ 
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image" />
+   <meta property="twitter:url" content="https://eefi-58799.web.app/" />
+   <meta property="twitter:title" content="EEFI" />
+   <meta property="twitter:description" content="" />
+   <meta property="twitter:image" content="/mete-icon.png" />
 </head>
 <body>
-  <section class="relative overflow-hidden max-w-[1920px] mx-auto">
-    <img src="./assets/images/WebP/Hero_section_Blue_layer.webp" alt="layer" class="absolute z-[1] top-0 left-0" />
-    <img src="./assets/images/WebP/hero_bottom_layer.webp" alt="hero_bottom_layer" class="absolute left-[16%]" />
+  <!-- loader -->
+   <section class="max-sm:hidden">
+  <div class="fixed bg-blue-300  h-1/2  w-1/2  -top-full -left-full z-[100] first_box"></div>
+  <div class="fixed bg-blue-300  h-1/2  w-1/2  -top-full -right-full z-[100] sec_box"></div>
+  <div class="fixed bg-blue-300  h-1/2  w-1/2  -bottom-full -right-full z-[100] third_box"></div>
+  <div class="fixed bg-blue-300  h-1/2  w-1/2  bottom-full -left-full z-[100] forth_box"></div>
+<div style="transform: translate(-50%, -50%);" class="fixed  z-[101] loder -top-full -left-full " >
+<div role="status">
+  <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+      <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+  </svg>
+  <span class="sr-only">Loading...</span>
+</div>
+</div>
+<div onclick="topFunction()" class=" w-[30px] h-[30px] bg-red-800 rounded-[50%] justify-center items-center   text-white border-none fixed bottom-[20px] hover:bg-black right-[20px] hidden cursor-pointer transition-all duration-300 z-[10]" id="back-to-top">
+  <img class="w-full" src="./assets/images/top.png" loading="eager" alt="back-to-top">
+</div>
+   </section>
+<!-- header -->
+  <section class="relative overflow-hidden max-w-[1920px] pb-[13px] mx-auto">
+      <img src="./assets/images/svg/her_section_dote.svg" loading="eager" alt="dote" class="absolute top-[5%] right-[3%] ">
+    <img src="./assets/images/WebP/Hero_section_Blue_layer.webp" loading="eager" alt="layer" class="absolute z-[1] max-lg:h-[90%] top-0 left-0" />
+    <img src="./assets/images/WebP/hero_bottom_layer.webp" loading="eager" alt="hero_bottom_layer" class="absolute left-[16%] max-md:hidden" />
     <div class="max-w-[1114px] relative z-50 mx-auto px-5">
       <div class="justify-between flex items-center">
         <div>
           <a href="/">
-            <img src="./assets/images/svg/Logo.svg" alt="Logo" />
+            <img src="./assets/images/svg/Logo.svg" loading="eager" alt="Logo" />
           </a>
         </div>
         <div onclick="navmenu()"
-          class="lg:hidden cursor-pointer overflow-hidden z-10 w-6 h-5 flex flex-col justify-between">
+          class="lg:hidden cursor-pointer overflow-hidden z-[101] w-6 h-5 flex flex-col justify-between">
           <span id="nav_line_1" class="w-full h-1 bg-white origin-left transition-all duration-300 rounded-md"></span>
           <span id="nav_line_out_side" class="w-full h-1 bg-white transition-all duration-300 rounded-md"></span>
           <span id="nav_line_2" class="w-full h-1 transition-all duration-300 bg-white origin-left rounded-md"></span>
         </div>
         <div id="mobile_view"
-          class="max-lg:fixed flex justify-center items-center max-lg:bg-blue-700 max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all duration-300">
+          class="max-lg:fixed max-lg:z-[100] flex justify-center items-center max-lg:bg-blue-700 max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all duration-300">
           <ul class="flex gap-6 max-lg:flex-col items-center justify-center">
             <li>
               <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="/">About</a>
+                href="#about">About</a>
             </li>
             <li>
               <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
@@ -67,17 +104,17 @@
             </li>
             <li>
               <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="/">Roadmap</a>
+                href="#roadmap">Roadmap</a>
             </li>
             <li class="relative group">
-              <a class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5 text-white" href="#">
+              <a class="flex gap-1  group flex-row justify-center items-center  text-white" href="#">
                 More
-                <img src="./assets/images/svg/DropDown_hero.svg" alt="DropDown_hero" />
+                <img class="rotate-180 group-hover:rotate-0 transition-all duration-300" src="./assets/images/svg/DropDown_hero.svg" loading="eager" alt="DropDown_hero" />
               </a>
-              <ul class="absolute left-0 hidden group-hover:block bg-black text-white">
-                <li><a class="block px-4 py-2 hover:bg-gray-700" target="_blank" href="https://facebook.com">facebook</a></li>
-                <li><a class="block px-4 py-2 hover:bg-gray-700" target="_blank" href="https://instagram.com">instagram</a></li>
-                <li><a class="block px-4 py-2 hover:bg-gray-700" target="_blank" href="https://x.com/?lang=en">twitter</a></li>
+              <ul class="absolute left-0 hidden group-hover:block bg-white text-white">
+                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://facebook.com">facebook</a></li>
+                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://instagram.com">instagram</a></li>
+                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://x.com/?lang=en">twitter</a></li>
               </ul>
             </li>
             
@@ -97,15 +134,15 @@
       </div>
     </div>
     <!-- Hero Section -->
-    <div class="max-w-[1440px] mx-auto">
+    <div class="max-w-[1440px] px-3 mx-auto">
       <div class="max-w-[1140px] relative z-10 mx-auto">
-        <div class="flex flex-wrap">
-          <div class="w-6/12 max-lg:w-full flex flex-col justify-center">
+        <div class="flex max-lg:flex-wrap">
+          <div class="w-6/12 max-lg:pt-10 max-lg:w-full flex flex-col justify-center">
             <div class="w-max justify-center items-center flex flex-col"></div>
-            <h1 class="max-w-[428px] text-[85px] leading-[112%] ffNeueMachinaRegular text-white">
+            <h1 class="max-w-[428px] text-[85px] max-lg:text-7xl max-md:text-[60px] max-sm:text-[56px] leading-[112%] Neue_Machina_normal text-white">
               BUILIDING ELASTIC PROTOCOL
             </h1>
-            <p class="leading-[150%] font-normal text-white max-w-[528px] mt-[30px]">
+            <p class="leading-[150%] font-normal text-white max-w-[528px] max-[500px]:max-w-[470px] mt-[30px]">
               An ecosystem of unique yield strategies that help you earn
               yield, amplify, and stretch it across all market conditions
             </p>
@@ -114,40 +151,54 @@
               </a>
             </div>
           </div>
-          <div class="w-6/12 max-lg:w-full">
-            <img class="w-full" src="./assets/images/WebP/hero_section_images.webp" alt="" />
+          <div class="-translate-x-[10px] max-lg:w-full">
+            <img class="lg:w-full max-sm:w-full lg:translate-y-[-32px] max-w-[700px]" src="./assets/images/WebP/hero_section_images.webp" loading="eager" alt="" />
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section style="
-        background-image: url(./assets/images/WebP/bull_section_bg_images.webp);
-      " class="max-w-[1920px] mx-auto bg-no-repeat bg-cover">
-    <div
-      class="text-center text-[52px] max-lg:text-5xl max-md:text-3xl font-extrabold text-white pt-3 Plus_jakarta_font">
-      Amplify and stretch gains
-    </div>
-    <div class="max-w-[1440px]">
-      <div class="flex flex-wrap">
-        <div class="w-6/12">
-          <img class="w-full max-w-[649px] translate-x-[130px]" src="./assets/images/png/bull_images.png" alt="bull_images" />
-        </div>
-        <div class="w-6/12 flex  items-end">
-          <img class="w-full max-w-[481px] translate-y-[23px]" src="./assets/images/png/bear_images.png" alt="bull_images" />
-        </div>
+  <!-- BUll Section -->
+  <section style="background-image: url('./assets/images/WebP/bull_section_bg_images.webp');"
+  class="relative overflow-hidden max-w-[1920px] mx-auto pb-[83px]  bg-cover bg-no-repeat bg-center">
+  <div class="bg-black">
+      <h2
+          class=" relative z-10 text-white  plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4">
+          Amplify and stretch gains</h2>
+  </div>
+  <div class="container px-4">
+      <div class="flex max-2xl:pt-10 pt-48">
+          <div class="max-w-[649px] bull_img -mt-[50px] " >
+              <img  src="./assets/images/WebP/bull_images.webp" loading="eager" alt="bull" class="max-sm:translate-y-[100px] max-md:translate-y-[80px]">
+          </div>
+          <div class="max-w-[532px] max-2xl:mt-7 mt-7  bear_img">
+              <img src="/assets/images/WebP/bear_images.webp" loading="eager" alt="bear" class="max-sm:translate-y-[50px] max-md:translate-y-[60px]">
+          </div>
       </div>
-    </div>
-  </section>
-  <section style="background-image: url(./assets/images/png/Roadmape_bg_iimages.png)"
-    class="-mt-2 bg-no-repeat bg-cover max-w-[1920px] mx-auto">
+      <div
+         style="transform: translate(-50% , -50%);" class=" absolute top-[46%] left-[50%] max-md:w-full max-sm:px-3 max-[1441px]:mt-[55px] mt-[150px] z-[21]">
+          <p class="text-center leading-[160%] text-white max-w-[554px] mx-auto text-[14px]">
+            We take a
+              different balanced approach to finding and creating yield opportunities in the everchanging crypto
+              market. Our yield strategies help users stay protected and hedged during bear markets and amplify
+              yield during bull markets without resorting to leverage or other dangerous techniques.</p>
+      </div>
+      <div class="flex items-center translate-y-[7px] max-sm:translate-y-[43px] justify-center ">
+          <img src="/assets/images/WebP/man.webp" loading="eager" alt="men" class="absolute bottom-0 max-sm:w-[50px]  w-[100px]">
+      </div>
+  </div>
+</section>
+<!-- Road Map -->
+  <section id="roadmap" style="background-image: url(./assets/images/WebP/Roadmap_bg_images.webp)"
+    class="-mt-2 bg-no-repeat bg-cover pb-[125px]  relative max-w-[1920px] mx-auto">
+    <img src="./assets/images/WebP/Clouds_bottom.webp" loading="eager" alt="Clouds_bottom" class="w-full absolute max-[430px]:top-[-1%] max-2xl:top-[-4%] max-[1140px]:top-[-3%] max-sm:top-[-1.5%]  max-[900px]:top-[-2.5%] max-md:top-[-2%] top-[-5%]">
     <div class="p-4">
-      <h2 class="text-3xl text-white font-bold text-center mb-12">RoadMap</h2>
+      <h2 class="text-[46px] text-white Neue_Machina_Ultra_bold text-center pb-[80px] pt-[120px] max-md:pt-[60px] max-md:pb-[40px]  mb-12">Roadmap</h2>
       <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 mb-6 text-gray-800 border border-solid border-[#1643C3] max-w-[373px] rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border border-solid border-[#1643C3] max-w-[373px] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
+            <h3 class="text-lg font-semibold lg:text-xl leading-[120%] Plus_jakarta_font text-white mb-4">
               2022
             </h3>
             <ul class="text-white ml-4">
@@ -171,7 +222,7 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-white border-opacity-[10%] rounded-full top-0"> 
               <div class="relative">
-              <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute -left-[150%] mt-2 ">
+              <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute -left-[150%] max-md:left-[150%] mt-2 ">
               </div>
             </div>
 
@@ -185,12 +236,12 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-0">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+            class="relative p-4 py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-3 mr-auto">
             <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
               2023 Beginning
             </h3>
@@ -213,7 +264,7 @@
         </div>
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
             <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
               Q3 2023
             </h3>
@@ -240,7 +291,7 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute -left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute -left-[150%] max-md:left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
@@ -253,12 +304,12 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-3 mr-auto">
             <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
               Q4 2023
             </h3>
@@ -283,7 +334,7 @@
         </div>
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
             <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
               Q1 2024
             </h3>
@@ -317,7 +368,7 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute -left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute -left-[150%] max-md:left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
@@ -330,12 +381,12 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-3 mr-auto">
             <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
               Q2 2024
             </h3>
@@ -357,7 +408,7 @@
         </div>
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
             <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
               Q3 2024
             </h3>
@@ -379,7 +430,7 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute -left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute -left-[150%] max-md:left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
@@ -392,12 +443,12 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-3 mr-auto">
             <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
               Q4 2024
             </h3>
@@ -413,9 +464,9 @@
         </div>
         <div class="flex md:contents flex-row-reverse">
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
             <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              Q3 2024
+              Q1 2025
             </h3>
             <ul class="text-white ml-4">
               <li class="list-disc leading-[150%]">
@@ -436,7 +487,7 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute -left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute -left-[150%]  max-md:left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
@@ -449,14 +500,14 @@
             <div
               class="absolute w-6 h-6 left-[-11.5px] -mt-3 bg-[#4273FF] border-4 border-indigo-400 rounded-full top-[5%]">
               <div class="relative">
-                <img src="./assets/images/svg/road_map_dote_border.svg" alt="border" class="absolute left-[150%] mt-2 ">
+                <img src="./assets/images/svg/road_map_dote_border.svg" loading="eager" alt="border" class="absolute left-[150%] mt-2 ">
                 </div>
             </div>
           </div>
           <div
-            class="relative p-4 mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+            class="relative p-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-3 mr-auto">
             <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
-              Q4 2024
+              Q2 2025
             </h3>
             <ul class="text-white ml-4">
               <li class="list-disc leading-[150%]">
@@ -470,16 +521,18 @@
       </div>
     </div>
   </section>
-  <footer style="background-image: url(./assets/images/WebP/footer_bg_images.webp)"
-    class="max-w-[1920px] -mt-1 bg-cover bg-no-repeat mx-auto">
+  <!-- Footer -->
+  <footer id="about" style="background-image: url(./assets/images/WebP/footer_bg_images.webp)"
+    class="max-w-[1920px] -mt-1 bg-cover py-[6px] bg-no-repeat mx-auto">
     <div class="container">
       <div class="flex flex-wrap justify-center items-center">
-        <div class="w-6/12 max-[1140px]:w-full max-[1140px]:pt-[150px] max-[1140px]:pb-[150px] px-5 pt-[217px] pb-[222px]">
+        <div class="w-6/12 max-[1140px]:w-full max-[1140px]:pt-[150px] max-md:py-[100px] max-[1140px]:pb-[150px] max-lg:px-5 pt-[205.5px] pb-[210.5px]">
           <h1
-            class="leading-[120%] mb-11 max-md:mb-8 max-sm:mb-5 font-extrabold text-white text-[46px] max-lg:text-4xl max-sm:text-[28px]">
+            class="leading-[120%] mb-11 max-md:mb-8 max-sm:mb-5 font-extrabold text-white text-[46px] Neue_Machina_Ultra_bold max-lg:text-4xl max-sm:text-[28px]">
             (E,E) Game Theory: An UPGRADE from (3,3)
           </h1>
-          <p class="leading-[160%] text-white text-base max-sm:text-sm">
+          <p class="leading-[160%] text-white max-w-[515px] text-base max-sm:text-sm">
+            <i>
             Remember (3,3) at its core was about social coordination. Or,
             people working together to achieve a common outcome or goal. (E,E)
             is the same. But with (E,E) people are working together not to
@@ -487,8 +540,10 @@
             but instead to establish the first ever decentralized amplified
             yield token… $EEFI. A token that can produce yield in any market
             condition.
+            </i>
           </p>
-          <p class="leading-[160%] text-white text-base max-sm:text-sm mt-5 max-lg:mt-4">
+          <p class="leading-[160%] text-white max-w-[515px] text-base max-sm:text-sm mt-2 max-lg:mt-4">
+            <i>
             To achieve this (E,E) has everyone work together by interacting
             with and supporting its ecosystem flywheel: Vaults, Bonds, Markets
             and other components. Interaction with the (E,E) Flywheel will
@@ -498,29 +553,31 @@
             of these assets are used to act as long term decentralized
             leverage on EEFI’s value. This is (E,E). This is sustainable. This
             is the UPGRADE.
+            </i>
           </p>
         </div>
         <div class="w-6/12 max-[1140px]:pb-[100px] max-[1140px]:w-full">
-          <div class="max-w-[530px] max-[530px]:max-w-[333px] min-h-[815px] mx-auto relative">
-            <img src="./assets/images/svg/border_line_1.svg" alt="svg_line_1" class="absolute left-1/2 top-[20%] max-[530px]:hidden" />
-            <img src="./assets/images/svg/border_line_2.svg" alt="border_line_2" class=" absolute top-[25%] left-1/2 max-[530px]:hidden"
+          <div class="max-w-[530px] translate-y-[-50px] max-[530px]:max-w-[333px] min-h-[815px] mx-auto relative">
+            <p class="font-extrabold leading-[120%] text-sm max-sm:text-xs absolute text-white top-[21%] max-sm:top-[23%] left-[52%]">Interact</p>
+            <img src="./assets/images/svg/border_line_1.svg" loading="eager" alt="svg_line_1" class="absolute left-1/2 top-[19%] max-[530px]:hidden" />
+            <img src="./assets/images/svg/border_line_2.svg" loading="eager" alt="border_line_2" class=" absolute top-[25%] left-1/2 max-[530px]:hidden"
               style="transform: translate(-50%);" />
-            <img src="/assets/images/svg/border_line_3.svg" alt="border_line_3"
+            <img src="/assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
               class="absolute top-[25.5%] left-[14%] max-[530px]:hidden " /> 
-              <img src="./assets/images/svg/border_line_8.svg" alt="border_line_8" class=" absolute top-[22%] left-[16%] max-[530px]:block hidden">
-            <img src="/assets/images/svg/border_line_3.svg" alt="border_line_3"
+              <img src="./assets/images/svg/border_line_8.svg" loading="eager" alt="border_line_8" class=" absolute top-[22%] left-[16%] max-[530px]:block hidden">
+            <img src="/assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
               class="absolute top-[25.5%] right-[14%] max-[530px]:hidden" />
-            <img src="/assets/images/svg/border_line_4.svg" alt="border_line_3" class="absolute top-[45%] left-[14%]" />
-            <img src="/assets/images/svg/border_line_4.svg" alt="border_line_3" class="absolute top-[45%] left-1/2" />
-            <img src="/assets/images/svg/border_line_4.svg" alt="border_line_3"
+            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3" class="absolute top-[45%] left-[14%]" />
+            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3" class="absolute top-[45%] left-1/2" />
+            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3"
               class="absolute top-[45%] right-[14%]" />
-            <img src="./assets/images/svg/border_line_3.svg" alt="border_line_3"
+            <img src="./assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
               class="absolute top-[35%] right-[32.5%] rotate-90">
-              <img src="./assets/images/svg/border_line_5.svg" alt="border_line_5" class="absolute top-[61%] left-[15%] max-[530px]:w-[52px] max-[530px]:top-[64%] max-[530px]:left-[18%]">
-              <img src="./assets/images/svg/border_line_6.svg" alt="border_line_6" class="absolute top-[61%] right-[15%] w-[189px] max-[530px]:w-[118px] max-[530px]:top-[64%] max-[530px]:right-[16.5%]">
-              <img src="./assets/images/svg/border_line_7.svg" alt="border_line_7" class="absolute top-[81%] left-[30%] max-[530px]:w-[119px] max-[530px]:top-[84%] max-[530px]:left-[32%]">
+              <img src="./assets/images/svg/border_line_5.svg" loading="eager" alt="border_line_5" class="absolute top-[61%] left-[15%] max-[530px]:w-[52px] max-[530px]:top-[64%] max-[530px]:left-[18%]">
+              <img src="./assets/images/svg/border_line_6.svg" loading="eager" alt="border_line_6" class="absolute top-[61%] right-[15%] w-[189px] max-[530px]:w-[118px] max-[530px]:top-[64%] max-[530px]:right-[16.5%]">
+              <img src="./assets/images/svg/border_line_7.svg" loading="eager" alt="border_line_7" class="absolute top-[81%] left-[30%] max-[530px]:w-[119px] max-[530px]:top-[84%] max-[530px]:left-[32%]">
             <div style="transform: translate(-50%)"
-              class="left-[50%] top-[10%] rounded bg-white absolute flex justify-center items-center min-h-[93px]">
+              class="left-[50%] top-[8%] max-sm:top-[11%] rounded bg-white absolute flex justify-center items-center min-h-[93px]">
               <div
                 class="min-h-[80px] min-w-[116px]  mx-[6.5px] rounded flex justify-center items-center flex-col bg-[#1643C3]">
                 <h1
@@ -532,8 +589,8 @@
             </div>
             <div class="w-max absolute top-[29%] max-[560px]:left-[3%] ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;"
-                class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/EEFI_Bonds.svg" alt="EEFI_Bonds">
+                class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/EEFI_Bonds.svg" loading="eager" alt="EEFI_Bonds">
                 <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">EEFI Bonds</h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Purchase. Lock up. Get
                   Discount</p>
@@ -541,8 +598,8 @@
             </div>
             <div style="transform: translate(-50%);" class="w-max absolute top-[29%] left-1/2">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/lock.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/lock.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">Vault </h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Deposit + Earn</p>
               </div>
@@ -550,8 +607,8 @@
             </div>
             <div class="w-max  top-[29%] absolute max-[560px]:right-[3%] right-0">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/Lp_positions.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/Lp_positions.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">LP Positions </h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm">Yield Farming</p>
               </div>
@@ -559,8 +616,8 @@
             </div>
             <div class="w-max max-[560px]:left-[3%] top-[49%] absolute  ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/grow.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/grow.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] leading-[150%] text-center mt-2"> Funding raised acquires
                   Growth assets</h1>
               </div>
@@ -568,8 +625,8 @@
             </div>
             <div style="transform: translate(-50%);" class="w-max absolute top-[49%] left-1/2">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/OHM.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/OHM.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px]  leading-[150%] text-center mt-2"> OHM Treasury Strategy
                 </h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Deposit + Earn</p>
@@ -577,30 +634,30 @@
             </div>
             <div class="w-max absolute max-[560px]:right-[3%] right-0 top-[49%] ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/market.svg" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] leading-[150%] text-center mt-2">Markets </h1>
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img  src="./assets/images/svg/market.svg" loading="eager" alt="lock">
+                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] items-center leading-[150%] text-center mt-2">Markets </h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Trade + Arb (Fees)</p>
               </div>
             </div>
             <div class="w-max absolute  right-[53%] top-[69%] ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/yield.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/yield.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">Yield From  Growth Assets</h1>
               </div>
             </div>
             <div class="w-max absolute right-[17.5%] top-[69%] ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/yield.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] items-center pt-[20px]items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/yield.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">Fees. Revenue. Yield to Treasury</h1>
               </div>
             </div>
             <div class="w-max absolute right-[35%] top-[89.5%] ">
               <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col justify-center items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/fire.svg" alt="lock">
+" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
+                <img src="./assets/images/svg/fire.svg" loading="eager" alt="lock">
                 <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">EEFI Furnace </h1>
                 <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm">Buy + Burn EEFI</p>
               </div>
@@ -608,9 +665,7 @@
           </div>
         </div>
   </footer>
-  <script src="./assets/js/app.js"> 
-
-  </script>
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

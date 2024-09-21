@@ -1,29 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-@font-face {
-    font-family: Neue_Machina_Light;
-    src: url("../fonts/NeueMachina-Light.ttf");
-  }
-  @font-face {
-    font-family: NeueMachinaRegular;
-    src: url("../fonts/NeueMachina-Regular.ttf");
-  }
-  
+*{
+  scroll-behavior: smooth;
+}
   @font-face {
       font-family: Neue Machina Ultrabold;
       src: url("../Font/PPNeueMachina-InktrapUltrabold.otf");
-    }
-    .ff-neue-machina-light {
-      font-family: Neue_Machina_Light;
-    }
-    
-    .ffNeueMachinaRegular {
-        font-family: NeueMachinaRegular;
-      }
-          
+      font-weight: normal;
+      font-style: normal;
+    }          
       .Neue_Machina_Ultra_bold{
         font-family: Neue Machina Ultrabold;
+      }
+      @font-face {
+        font-family: Neue Machina;
+        src: url("..//Font/NeueMachina-Regular.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .Neue_Machina_normal{
+        font-family: Neue Machina;
       }
 
 *{
@@ -32,4 +28,89 @@
 
 .Plus_jakarta_font{
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+.first_box{
+  animation: topLeft 2s  ;
+}
+.sec_box{
+  animation: topRight 2s  ;
+}
+.third_box{
+  animation: bottomRight 2s  ;
+}
+.forth_box{
+  animation: bottomLeft 2s  ;
+}
+.loder{
+  animation: loader 2s;
+}
+@keyframes topLeft {
+  0%{
+    top: 0;
+    left: 0;
+  }
+  50%{
+    top: 0;
+    left: 0;
+  }
+ 100% {
+  top: -100%;
+  left: -100%;
+ }
+}
+@keyframes topRight {
+  0%{
+    top: 0;
+    right: 0;
+  }
+  50%{
+    top: 0;
+    right: 0;
+  }
+ 100% {
+  top: -100%;
+  righ3: -100%;
+ }
+}
+@keyframes bottomRight {
+  0%{
+    bottom: 0;
+    right: 0;
+  }
+  50%{
+   bottom: 0;
+   right: 0;
+  }
+ 100% {
+  bottom: -100%;
+  right: -100%;
+ }
+}
+@keyframes bottomLeft {
+  0%{
+    bottom: 0;
+    left: 0;
+  }
+  50%{
+  bottom: 0;
+  left: 0;
+  }
+ 100% {
+  bottom: -100%;
+    left: -100%;
+ }
+}
+@keyframes loader {
+  0%{
+    top: 50%;
+    left: 50%;
+  }
+  50%{
+    top: 50%;
+    left: 50%;
+  }
+  100%{
+top: -100%;
+left: -100%;
+  }
 }
