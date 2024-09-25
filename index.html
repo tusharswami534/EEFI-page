@@ -1,721 +1,1182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>EEFI</title>
+    <meta name="title" content="EEFI" />
+    <meta
+      name="description"
+      content="An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across all market conditions"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="shortcut icon" href="./assets/images/svg/Logo.svg" type="image/x-icon" />
-  <title>EEFI</title>
-  <script>
-    tailwind.config = {
-      theme: {
-        container: {
-          center: true,
-          screens: {
-            sm: "992px",
-            md: "1140px",
-            lg: "1140px",
-            xl: "1140px",
-            "2xl": "1140px",
-          },
-        },
-      },
-    };
-  </script>
-   <meta name="title" content="EEFI" />
-   <meta name="description" content="" />
-   <meta property="og:type" content="website" />
-   <meta property="og:url" content="https://eefi-58799.web.app/" />
-   <meta property="og:title" content="EEFI" />
-   <meta property="og:description" content="" />
-   <meta property="og:image" content="/mete-icon.png" />
-   <meta property="twitter:card" content="summary_large_image" />
-   <meta property="twitter:url" content="https://eefi-58799.web.app/" />
-   <meta property="twitter:title" content="EEFI" />
-   <meta property="twitter:description" content="" />
-   <meta property="twitter:image" content="/mete-icon.png" />
-</head>
-<body>
-<!-- header -->
-  <section id="hero" class="relative overflow-hidden max-w-[1920px] pb-[13px] mx-auto">
-      <img src="./assets/images/svg/her_section_dote.svg" loading="eager" alt="dote" class="absolute top-[5%] right-[3%] ">
-    <img src="./assets/images/WebP/Hero_section_Blue_layer.webp" loading="eager" alt="layer" class="absolute max-sm:h-[65%] z-[1] 2xl:h-[83%] 2xl:w-[72%] max-lg:h-[50%] top-0 left-0" />
-    <img src="./assets/images/WebP/hero_bottom_layer.webp" loading="eager" alt="hero_bottom_layer" class="absolute left-[16%] max-md:hidden" />
-    <div class="max-w-[1140px] lg:pt-5 relative z-50 mx-auto max-lg:px-5">
-      <div class="justify-between flex items-center">
-        <div>
-          <a href="/">
-            <img src="./assets/images/svg/Logo.svg" loading="eager" alt="Logo" />
-          </a>
-        </div>
-        <div onclick="navmenu()"
-        class="lg:hidden cursor-pointer overflow-hidden z-[101] w-6 h-5 flex flex-col justify-between">
-       <span id="nav_line_1" class="w-full h-1 bg-white origin-left transition-all duration-300 rounded-md"></span>
-       <span id="nav_line_out_side" class="w-full h-1 bg-white transition-all duration-300 rounded-md"></span>
-       <span id="nav_line_2" class="w-full h-1 transition-all duration-300 bg-white origin-left rounded-md"></span>
-   </div>
-   
-        <div id="mobile_view"
-          class="max-lg:fixed max-lg:z-[100] flex justify-center items-center max-lg:bg-blue-700 max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all duration-300">
-          <ul class="flex gap-6 max-lg:flex-col items-center justify-center">
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#about">About</a>
-            </li>
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#hero">IBO Event</a>
-            </li>
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#hero">EEFI Tokenomics</a>
-            </li>
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#bull">Team</a>
-            </li>
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#bull">Partners</a>
-            </li>
-            <li>
-              <a class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
-                href="#roadmap">Roadmap</a>
-            </li>
-            <li class="relative group">
-              <a class="flex gap-1  group flex-row justify-center items-center  text-white" href="#hero">
-                More
-                <img class="rotate-0 group-hover:rotate-180 transition-all duration-300" src="./assets/images/svg/DropDown_hero.svg" loading="eager" alt="DropDown_hero" />
-              </a>
-              <ul class="absolute left-0 hidden group-hover:block bg-white text-white">
-                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://facebook.com">facebook</a></li>
-                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://instagram.com">instagram</a></li>
-                <li><a class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700" target="_blank" href="https://x.com/?lang=en">twitter</a></li>
-              </ul>
-            </li>
-            <li class="lg:hidden">
-              <button class="py-4 px-8 rounded-lg border border-white text-white">
-                Enter App
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="max-lg:hidden">
-          <button
-            class="py-3 px-8 max-lg:hidden rounded-lg border lg:mr-2 hover:scale-110 transition-all duration-300 border-[#1843BF] bg-white text-[#1743C0]">
-            Enter App
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Hero Section -->
-    <div class="max-w-[1440px] px-3 mx-auto">
-      <div class="max-w-[1140px] relative z-10 mx-auto">
-        <div class="flex max-lg:flex-wrap">
-          <div class="w-6/12 max-lg:pt-10 max-lg:w-full flex flex-col justify-center">
-            <div class="w-max justify-center items-center flex flex-col"></div>
-            <h1 class="max-w-[428px] text-[85px] max-lg:text-7xl max-md:text-[60px] max-sm:text-[56px] leading-[112%] Neue_Machina_normal text-white">
-              BUILIDING ELASTIC PROTOCOL
-            </h1>
-            <p class="leading-[150%] font-normal text-white max-w-[528px] max-sm:w-[75%] max-[500px]:max-w-[470px] mt-[30px]">
-              An ecosystem of unique yield strategies that help you earn
-              yield, amplify, and stretch it across all market conditions
-            </p>
-            <div class="mt-[26px]">
-              <a class="relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5  after:bg-white  text-white pt-[26px] font-bold" href="/">Audited by Omniscia
-              </a>
-            </div>
-          </div>
-          <div class="-translate-x-[10px] max-lg:w-full">
-            <img class="lg:w-full max-sm:w-full lg:translate-y-[-32px] max-w-[700px]" src="./assets/images/WebP/hero_section_images.webp" loading="eager" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- BUll Section -->
-  <section id="bull" style="background-image: url('./assets/images/WebP/bull_section_bg_images.webp');"
-  class="relative overflow-hidden max-w-[1920px] mx-auto pb-[83px]  bg-cover bg-no-repeat bg-center">
-  <div class="bg-black">
-      <h2
-          class=" relative z-10 text-white  plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4">
-          Amplify and stretch gains</h2>
-  </div>
-  <div class="container px-4">
-      <div class="flex max-2xl:pt-10 pt-48">
-          <div class="max-w-[649px] bull_img -mt-[50px] " >
-              <img  src="./assets/images/WebP/bull_images.webp" loading="eager" alt="bull" class="max-sm:translate-y-[100px] max-md:translate-y-[80px]">
-          </div>
-          <div class="max-w-[532px] max-2xl:mt-7 mt-7  bear_img">
-              <img src="/assets/images/WebP/bear_images.webp" loading="eager" alt="bear" class="max-sm:translate-y-[50px] max-md:translate-y-[60px]">
-          </div>
-      </div>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eefi-58799.web.app/" />
+    <meta property="og:title" content="EEFI" />
+    <meta
+      property="og:description"
+      content="An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across all market conditions"
+    />
+    <meta property="og:image" content="/mete-icon.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://eefi-58799.web.app/" />
+    <meta property="twitter:title" content="EEFI" />
+    <meta
+      property="twitter:description"
+      content="An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across all market conditions"
+    />
+    <meta property="twitter:image" content="/mete-icon.webp" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/svg/Logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section
+      id="hero"
+      class="relative overflow-hidden max-w-[1920px] pb-[17px] mx-auto"
+    >
+      <img
+        src="./assets/images/svg/her_section_dote.svg"
+        loading="eager"
+        alt="dote"
+        class="absolute max-md:hidden top-[5%] right-[3%]"
+      />
+      <img
+        src="./assets/images/WebP/Hero_section_Blue_layer.webp"
+        alt="layer"
+        width="1100"
+        class="absolute max-sm:max-w-[640px] max-sm:w-full max-[1100px]:h-[91%] max-sm:h-[55%] z-[1] 2xl:h-[83%] 2xl:w-[72%] max-lg:h-[50%] top-0 left-0"
+      />
+      <img
+        src="./assets/images/WebP/hero_bottom_layer.webp"
+        loading="eager"
+        alt="hero_bottom_layer"
+        class="absolute max-w-[1210px] left-[16%] max-md:hidden"
+      />
       <div
-         style="transform: translate(-50% , -50%);" class=" absolute top-[46%] left-[50%] max-md:w-full max-sm:px-3 max-[1441px]:mt-[55px] mt-[150px] z-[21]">
-          <p class="text-center leading-[160%] text-white max-w-[554px] mx-auto text-[14px]">
-            We take a
-              different balanced approach to finding and creating yield opportunities in the everchanging crypto
-              market. Our yield strategies help users stay protected and hedged during bear markets and amplify
-              yield during bull markets without resorting to leverage or other dangerous techniques.</p>
-      </div>
-      <div class="flex items-center translate-y-[7px] max-sm:translate-y-[43px] justify-center ">
-          <img src="/assets/images/WebP/man.webp" loading="eager" alt="men" class="absolute bottom-0 max-sm:w-[50px]  w-[100px]">
-      </div>
-  </div>
-</section>
-<!-- Road Map -->
-  <section id="roadmap" style="background-image: url(./assets/images/WebP/Roadmap_bg_images.webp)"
-    class="-mt-2 bg-no-repeat bg-cover pb-[125px]  relative max-w-[1920px] mx-auto">
-    <img src="./assets/images/WebP/Clouds_bottom.webp" loading="eager" alt="Clouds_bottom" class="w-full absolute max-[430px]:top-[-1%] max-2xl:top-[-4%] max-[1140px]:top-[-3%] max-sm:top-[-1.5%]  max-[900px]:top-[-2.5%] max-md:top-[-2%] top-[-5%]">
-    <div class="p-4">
-      <h2 class="text-[46px] text-white Neue_Machina_Ultra_bold text-center pb-[80px] pt-[120px] max-md:pt-[60px] max-md:pb-[40px] max-lg:text-[40px] max-md:text-[36px] max-sm:text-[28px] max-sm:pt-[40px] max-sm:pb-[20px] max-sm:mb-0  mb-12">Roadmap</h2>
-      <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
-        <div class="flex md:contents flex-row-reverse">
+        class="max-w-[1140px] max-[1140px]:px-3 max-lg:pt-4 lg:pt-5 relative z-50 mx-auto max-lg:px-5"
+      >
+        <div class="justify-between flex items-center">
+          <div>
+            <a href="/">
+              <img
+                src="./assets/images/svg/Logo.svg"
+                loading="eager"
+                alt="Logo"
+              />
+            </a>
+          </div>
           <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border border-solid border-[#1643C3] max-w-[373px] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl leading-[120%] Plus_jakarta_font text-white mb-4">
-              2022
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Ideation of Elastic Protocol
+            onclick="navmenu()"
+            class="lg:hidden cursor-pointer overflow-hidden z-[101] w-6 h-5 flex flex-col justify-between"
+          >
+            <span
+              id="nav_line_out_side"
+              class="w-full h-1 bg-white origin-left transition-all duration-300 rounded-md"
+            ></span>
+            <span
+              id="nav_line"
+              class="w-full h-1 bg-white transition-all relative after:w-full after:absolute after:rounded-md after:transition-all after:duration-300 after:h-full after:left-0 after:bg-white duration-300 rounded-md"
+            ></span>
+            <span
+              id="nav_line_out_side_1"
+              class="w-full h-1 transition-all duration-300 bg-white origin-left rounded-md"
+            ></span>
+          </div>
+          <div
+            id="mobile_view"
+            class="max-lg:fixed max-lg:z-[100] flex justify-center items-center max-lg:bg-blue-700 max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all duration-300"
+          >
+            <ul class="flex gap-6 max-lg:flex-col items-center justify-center">
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#about"
+                  >About</a
+                >
               </li>
-              <li class="list-disc ml-4 leading-[150%]">
-                Elastic Protocol GitBook
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#hero"
+                  >IBO Event</a
+                >
               </li>
-              <li class="list-disc ml-4 leading-[150%]">
-                Full Code development of Elastic Vault Strategy
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#hero"
+                  >EEFI Tokenomics</a
+                >
               </li>
-              <li class="list-disc ml-4 leading-[150%]">Audit</li>
-              <li class="list-disc leading-[150%]">Complete Alpha Testing</li>
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#bull"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#bull"
+                  >Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-white pb-0.5"
+                  href="#roadmap"
+                  >Roadmap</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  class="flex gap-1 group flex-row justify-center items-center text-white"
+                  href="#hero"
+                  >More
+                  <img
+                    class="rotate-0 group-hover:rotate-180 transition-all duration-300"
+                    src="./assets/images/svg/DropDown_hero.svg"
+                    loading="eager"
+                    alt="DropDown_hero"
+                /></a>
+                <ul
+                  class="absolute left-0 hidden group-hover:block bg-white text-white"
+                >
+                  <li>
+                    <a
+                      class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700"
+                      target="_blank"
+                      href="https://facebook.com"
+                      >facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700"
+                      target="_blank"
+                      href="https://instagram.com"
+                      >instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block px-4 py-2 text-black hover:text-white hover:bg-gray-700"
+                      target="_blank"
+                      href="https://x.com/?lang=en"
+                      >twitter</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="lg:hidden">
+                <button
+                  class="py-4 px-8 rounded-lg border border-white text-white"
+                >
+                  Enter App
+                </button>
+              </li>
             </ul>
           </div>
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b"></div>
-            </div>
-            <div
-              class="absolute  w-6 h-6 left-[-11.5px] -mt-3  rounded-full top-0 max-md:top-[4%]"> 
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] max-md:left-[100%] left-[-100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-
+          <div class="max-lg:hidden">
+            <button
+              class="py-3 px-8 max-lg:hidden rounded-lg border lg:mr-2 hover:scale-110 transition-all duration-300 border-[#1843BF] bg-white text-[#1743C0]"
+            >
+              Enter App
+            </button>
           </div>
         </div>
-        <div class="flex md:contents">
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
+      </div>
+      <!-- Hero Section -->
+      <div class="max-w-[1440px] px-3 mx-auto">
+        <div class="max-w-[1140px] relative z-10 mx-auto">
+          <div class="flex max-lg:flex-wrap">
             <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3  rounded-full max-md:top-[5%] top-0">
-
+              class="w-6/12 max-lg:pt-10 max-lg:w-full flex flex-col justify-center"
+            >
+              <div
+                class="w-max justify-center items-center flex flex-col"
+              ></div>
+              <h1
+                class="max-w-[428px] text-[85px] max-lg:text-[48px] max-md:text-[44px] max-xl:text-[56px] max-sm:text-[42px] leading-[112%] Neue_Machina_normal text-white"
+              >
+                BUILIDING ELASTIC PROTOCOL
+              </h1>
+              <p
+                class="leading-[150%] font-normal text-white max-w-[528px] max-sm:w-[75%] max-[500px]:max-w-[470px] mt-[30px]"
+              >
+                An ecosystem of unique yield strategies that help you earn
+                yield, amplify, and stretch it across all market conditions
+              </p>
+              <div class="mt-[26px]">
+                <a
+                  class="relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white text-white pt-[26px] font-bold"
+                  href="/"
+                  >Audited by Omniscia
+                </a>
+              </div>
+            </div>
+            <div class="-translate-x-[10px] max-lg:w-full">
+              <img
+                class="lg:w-full max-sm:max-w-[400px] max-sm:w-full lg:translate-y-[-32px] max-w-[700px] max-xl:max-w-[450px]"
+                src="./assets/images/WebP/hero_section_images.webp"
+                loading="eager"
+                alt="images"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BUll Section -->
+    <section
+      id="bull"
+      style="
+        background-image: url('./assets/images/WebP/bull_section_bg_images.webp');
+      "
+      class="relative overflow-hidden max-w-[1920px] mx-auto pb-[83px] bg-cover bg-no-repeat bg-center"
+    >
+      <div class="bg-black">
+        <h2
+          class="relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4"
+        >
+          Amplify and STRETCH GAINS
+        </h2>
+      </div>
+      <div class="container px-4">
+        <div class="flex max-2xl:pt-10 pt-48">
+          <div class="max-w-[649px] bull_img -mt-[50px]">
+            <img
+              src="./assets/images/WebP/bull_images.webp"
+              loading="eager"
+              alt="bull"
+              class="max-sm:translate-y-[100px] 2xl:translate-y-[50px] max-md:translate-y-[80px]"
+            />
+          </div>
+          <div class="max-w-[532px] max-2xl:mt-7 mt-7 bear_img">
+            <img
+              src="/assets/images/WebP/bear_images.webp"
+              loading="eager"
+              alt="bear"
+              class="max-sm:translate-y-[50px] translate-y-[25px] max-md:translate-y-[60px]"
+            />
+          </div>
+        </div>
+        <div
+          style="transform: translate(-50%, -50%)"
+          class="absolute top-[46%] left-[50%] max-md:w-full max-sm:px-3 max-[1441px]:mt-[55px] mt-[150px] z-[21]"
+        >
+          <p
+            class="text-center leading-[160%] text-white max-w-[554px] mx-auto text-[14px]"
+          >
+            We take a different balanced approach to finding and creating yield
+            opportunities in the everchanging crypto market. Our yield
+            strategies help users stay protected and hedged during bear markets
+            and amplify yield during bull markets without resorting to leverage
+            or other dangerous techniques.
+          </p>
+        </div>
+        <div
+          class="flex items-center translate-y-[7px] max-sm:translate-y-[43px] justify-center"
+        >
+          <img
+            src="/assets/images/WebP/man.webp"
+            loading="eager"
+            alt="men"
+            class="absolute bottom-0 max-sm:w-[50px] w-[100px]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Road Map -->
+    <section
+      id="roadmap"
+      style="background-image: url(./assets/images/WebP/Roadmap_bg_images.webp)"
+      class="-mt-2 bg-no-repeat bg-cover pb-[125px] max-xl:pb-[100px] max-lg:pb-[70px] relative max-w-[1920px] mx-auto"
+    >
+      <img
+        src="./assets/images/WebP/Clouds_bottom.webp"
+        loading="eager"
+        alt="Clouds_bottom"
+        class="w-full [1700px]:top-[-6%] absolute max-[430px]:top-[-1%] max-2xl:top-[-4%] max-[1140px]:top-[-3%] max-sm:top-[-1.5%] max-[900px]:top-[-2.5%] max-md:top-[-2%] top-[-5%]"
+      />
+      <div class="p-4">
+        <h2
+          class="text-[46px] text-white Neue_Machina_Ultra_bold text-center pb-[80px] pt-[120px] max-md:pt-[60px] max-md:pb-[40px] max-lg:text-[40px] max-md:text-[36px] max-sm:text-[28px] max-sm:pt-[40px] max-xl:pt-[80px] max-xl:pb-[40px] max-sm:pb-[20px] max-sm:mb-0 mb-12"
+        >
+          Roadmap
+        </h2>
+        <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+          <div class="flex md:contents flex-row-reverse">
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border border-solid border-[#1643C3] max-w-[373px] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl leading-[120%] Plus_jakarta_font text-white mb-4"
+              >
+                2022
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Ideation of Elastic Protocol
+                </li>
+                <li class="list-disc ml-4 leading-[150%]">
+                  Elastic Protocol GitBook
+                </li>
+                <li class="list-disc ml-4 leading-[150%]">
+                  Full Code development of Elastic Vault Strategy
+                </li>
+                <li class="list-disc ml-4 leading-[150%]">Audit</li>
+                <li class="list-disc leading-[150%]">Complete Alpha Testing</li>
+              </ul>
+            </div>
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div
+                  class="w-1 translate-y-[10px] h-full bg-[#4273FF] max-md:translate-y-2.5 rounded-t-full bg-gradient-to-b"
+                ></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%] max-md:top-[4%]"
+              >
                 <div class="relative">
-                  <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                  <div class="absolute mt-[10px] left-[100%]">
-                 <div class="w-[31px] flex justify-between ">
-                  <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                  <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                  <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-                 </div>
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div
+                    class="absolute mt-[10px] max-md:left-[100%] left-[-100%]"
+                  >
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
                   </div>
                 </div>
-                
-            </div>
-          </div>
-          <div
-            class="relative p-4 py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              2023 Beginning
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Olympus Partnership Beginning
-              </li>
-              <li class="list-disc ml-4 leading-[150%]">$25k Grant 2023</li>
-              <li class="list-disc ml-4 leading-[150%]">
-                $150k Total seeded Liquidity sought from Olympus DAO
-              </li>
-              <li class="list-disc ml-4 leading-[150%]">
-                Third Party Partner Intros
-              </li>
-              <li class="list-disc leading-[150%]">
-                Elastic Vault Strategy Updates + Olympus $OHM Integrations
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex md:contents flex-row-reverse">
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              Q3 2023
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Partner launched KOLs Marketing Campaign | Rally larger
-                community base
-              </li>
-              <li class="list-disc leading-[150%]">
-                Balancer $EEFI Pools launch
-              </li>
-              <li class="list-disc leading-[150%]">
-                Launch of Elastic Vault Strategy (flagship) + $EEFI
-              </li>
-              <li class="list-disc leading-[150%]">
-                Third Party Partner Intros
-              </li>
-            </ul>
-          </div>
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full rounded-t-full bg-gradient-to-b bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3  rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] max-md:left-[100%] left-[-100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flex md:contents">
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3  rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] left-[100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
+          <div class="flex md:contents">
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
               </div>
-            </div>
-          </div>
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto">
-            <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
-              Q4 2023
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">Front End upgrade</li>
-              <li class="list-disc leading-[150%]">
-                INO [Initial NFT Offering]: Social Elastic NFT campaign
-              </li>
-              <li class="list-disc ml-5 leading-[150%]">
-                Initial Olympus econOHMy Vaults:
-              </li>
-              <li class="list-disc ml-5 leading-[150%]">
-                Olympus | Uniswap LP Vault
-              </li>
-              <li class="list-disc leading-[150%]">
-                Elastic Community Engagement: Onboard contributors to drive
-                protocol development, partnerships, community development and
-                begin governance activities
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex md:contents flex-row-reverse">
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-3 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              Q1 2024
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Elastic Research and Development: Explore additional vault
-                strategies and develop risk and due-diligence procedures
-                associated with strategy development and implementation
-              </li>
-              <li class="list-disc leading-[150%]">
-                Elastic Vault (Sub-Vaults): Begin exploring additional tokens
-                to add to core Elastic Vault strategy
-              </li>
-              <li class="list-disc leading-[150%]">
-                Arbitrum Layer 2 yield strategy considerations
-              </li>
-              <li class="list-disc leading-[150%]">
-                Begin developing comprehensive tokenomics for $EFT (Elastic
-                Protocol governance token)
-              </li>
-              <li class="list-disc leading-[150%]">
-                First $EEFI Bonds Program [Bond Protocol] (beta): treasury
-                bolster fundraise
-              </li>
-            </ul>
-          </div>
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3  rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] max-md:left-[100%] left-[-100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex md:contents">
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3  rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] left-[100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto">
-            <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
-              Q2 2024
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Gearbox | OHM [Perp-Leverage] Vault
-              </li>
-              <li class="list-disc leading-[150%]">
-                Bond Protocol (Bonding) Vault
-              </li>
-              <li class="list-disc leading-[150%]">
-                Future Strategy (vote): Real Yield GMX | GPL Vault
-              </li>
-              <li class="list-disc leading-[150%]">
-                Future Strategy (vote): Elastic Options Vault (sub-vault)
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex md:contents flex-row-reverse">
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              Q3 2024
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Establish DAO to govern Elastic Finance and fully decentralize
-                protocol
-              </li>
-              <li class="list-disc leading-[150%]">
-                Elastic Yield Alliance (Strategic Yield Strategy Partners):
-                begin governance vote for Multi-chain yield strategies
-              </li>
-            </ul>
-          </div>
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] max-md:left-[100%] left-[-100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex md:contents">
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] left-[100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto">
-            <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
-              Q4 2024
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Community voted Yield Strategy 1 (governance)
-              </li>
-              <li class="list-disc leading-[150%]">
-                $EEFI Borrowing and Lending Partnership
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex md:contents flex-row-reverse">
-          <div
-            class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto">
-            <h3 class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4">
-              Q1 2025
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Community voted Yield Strategy 2 (governance)
-              </li>
-              <li class="list-disc leading-[150%]">
-                Olympus RBS-OHM Real Yield Vault (strategy)
-              </li>
-              <li class="list-disc leading-[150%]">
-                Launch EFT governance token Airdrop
-              </li>
-            </ul>
-          </div>
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] max-md:left-[100%] left-[-100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex md:contents">
-          <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-            <div class="flex items-center justify-center w-0.5 h-full">
-              <div class="w-1 h-full bg-[#4273FF]"></div>
-            </div>
-            <div
-              class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]">
-              <div class="relative">
-                <img src="./assets/images/svg/roadmap_dote.svg" alt="roadmap" class="top-[5%] absolute">
-                <div class="absolute mt-[10px] left-[100%]">
-               <div class="w-[31px] flex justify-between ">
-                <span class="flex bg-[#4273FF] h-01 w-1"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
-                <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative p-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto">
-            <h3 class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4">
-              Q2 2025
-            </h3>
-            <ul class="text-white ml-5">
-              <li class="list-disc leading-[150%]">
-                Hand over Elastic Finance DAO to Community: Complete
-                decentralization of Elastic Finance DAO, its treasury, its
-                yield strategies and community governance
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer id="about" style="background-image: url(./assets/images/WebP/footer_bg_images.webp)"
-    class="max-w-[1920px] -mt-1 bg-cover py-[6px] bg-no-repeat mx-auto">
-    <div class="container">
-      <div class="flex flex-wrap justify-center items-center">
-        <div class="w-6/12 max-[1140px]:w-full max-[1140px]:pt-[150px] max-[1140px]:justify-center max-[1140px]:items-center max-[1140px]:flex max-[1140px]:flex-col  max-md:py-[100px] max-[1140px]:pb-[150px] max-lg:px-5 pt-[205.5px] pb-[210.5px]">
-          <h1
-            class="leading-[120%] mb-11 max-md:mb-8 max-sm:mb-5 max-w-[530px] font-extrabold text-white text-[46px] Neue_Machina_Ultra_bold max-lg:text-4xl max-sm:text-[28px]">
-            (E,E) Game Theory: An UPGRADE from (3,3)
-          </h1>
-          <p class="leading-[160%] text-white max-w-[515px] text-base max-sm:text-sm">
-            <i>
-            Remember (3,3) at its core was about social coordination. Or,
-            people working together to achieve a common outcome or goal. (E,E)
-            is the same. But with (E,E) people are working together not to
-            grow a robust treasury that would back a decentralized stablecoin
-            but instead to establish the first ever decentralized amplified
-            yield token… $EEFI. A token that can produce yield in any market
-            condition.
-            </i>
-          </p>
-          <p class="leading-[160%] text-white max-w-[515px] text-base max-sm:text-sm mt-2 max-lg:mt-4">
-            <i>
-            To achieve this (E,E) has everyone work together by interacting
-            with and supporting its ecosystem flywheel: Vaults, Bonds, Markets
-            and other components. Interaction with the (E,E) Flywheel will
-            help build a treasury of what we term high quality “growth
-            assets”. Assets that are revenue bearing, interest bearing, Real
-            Yield bearing or Rebase bearing. Where the ‘growth’ aka the yields
-            of these assets are used to act as long term decentralized
-            leverage on EEFI’s value. This is (E,E). This is sustainable. This
-            is the UPGRADE.
-            </i>
-          </p>
-        </div>
-        <div class="w-6/12 max-[1140px]:pb-[100px] max-[1140px]:w-full">
-          <div class="max-w-[530px] translate-y-[-50px] max-[530px]:max-w-[333px] min-h-[815px] mx-auto relative">
-            <p class="font-extrabold leading-[120%] text-sm max-sm:text-xs absolute text-white top-[21%] max-sm:top-[23%] left-[52%]">Interact</p>
-            <img src="./assets/images/svg/border_line_1.svg" loading="eager" alt="svg_line_1" class="absolute left-1/2 top-[19%] max-[530px]:hidden" />
-            <img src="./assets/images/svg/border_line_2.svg" loading="eager" alt="border_line_2" class=" absolute top-[25%] left-1/2 max-[530px]:hidden"
-              style="transform: translate(-50%);" />
-            <img src="/assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
-              class="absolute top-[25.5%] left-[14%] max-[530px]:hidden " /> 
-              <img src="./assets/images/svg/border_line_8.svg" loading="eager" alt="border_line_8" class=" absolute top-[22%] left-[16%] max-[530px]:block hidden">
-            <img src="/assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
-              class="absolute top-[25.5%] right-[14%] max-[530px]:hidden" />
-            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3" class="absolute top-[45%] left-[14%]" />
-            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3" class="absolute top-[45%] left-1/2" />
-            <img src="/assets/images/svg/border_line_4.svg" loading="eager" alt="border_line_3"
-              class="absolute top-[45%] right-[14%]" />
-            <img src="./assets/images/svg/border_line_3.svg" loading="eager" alt="border_line_3"
-              class="absolute top-[35%] right-[32.5%] rotate-90">
-              <img src="./assets/images/svg/border_line_5.svg" loading="eager" alt="border_line_5" class="absolute top-[61%] left-[15%] max-[530px]:w-[52px] max-[530px]:top-[64%] max-[530px]:left-[18%]">
-              <img src="./assets/images/svg/border_line_6.svg" loading="eager" alt="border_line_6" class="absolute top-[61%] right-[15%] w-[189px] max-[530px]:w-[118px] max-[530px]:top-[64%] max-[530px]:right-[16.5%]">
-              <img src="./assets/images/svg/border_line_7.svg" loading="eager" alt="border_line_7" class="absolute top-[81%] left-[30%] max-[530px]:w-[119px] max-[530px]:top-[84%] max-[530px]:left-[32%]">
-            <div style="transform: translate(-50%)"
-              class="left-[50%] top-[8%] max-sm:top-[11%] rounded bg-white absolute flex justify-center items-center min-h-[93px]">
               <div
-                class="min-h-[80px] min-w-[116px]  mx-[6.5px] rounded flex justify-center items-center flex-col bg-[#1643C3]">
-                <h1
-                  class="font-extrabold text-2xl max-lg:text-xl ff-neue-machina leading-[120%] text-white text-center">
-                  YOU
-                </h1>
-                <p class="text-white text-sm leading-[160%]">(Flywheel)</p>
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full max-md:top-[5%] top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div class="absolute mt-[10px] left-[100%]">
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-max absolute top-[29%] max-[560px]:left-[3%] ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;"
-                class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/EEFI_Bonds.svg" loading="eager" alt="EEFI_Bonds">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">EEFI Bonds</h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Purchase. Lock up. Get
-                  Discount</p>
+            <div
+              class="relative p-4 py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4"
+              >
+                2023 Beginning
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Olympus Partnership Beginning
+                </li>
+                <li class="list-disc ml-4 leading-[150%]">$25k Grant 2023</li>
+                <li class="list-disc ml-4 leading-[150%]">
+                  $150k Total seeded Liquidity sought from Olympus DAO
+                </li>
+                <li class="list-disc ml-4 leading-[150%]">
+                  Third Party Partner Intros
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Elastic Vault Strategy Updates + Olympus $OHM Integrations
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex md:contents flex-row-reverse">
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4"
+              >
+                Q3 2023
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Partner launched KOLs Marketing Campaign | Rally larger
+                  community base
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Balancer $EEFI Pools launch
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Launch of Elastic Vault Strategy (flagship) + $EEFI
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Third Party Partner Intros
+                </li>
+              </ul>
+            </div>
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div
+                  class="w-1 h-full rounded-t-full bg-gradient-to-b bg-[#4273FF]"
+                ></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div
+                    class="absolute mt-[10px] max-md:left-[100%] left-[-100%]"
+                  >
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div style="transform: translate(-50%);" class="w-max absolute top-[29%] left-1/2">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/lock.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">Vault </h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Deposit + Earn</p>
+          </div>
+          <div class="flex md:contents">
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
               </div>
-
-            </div>
-            <div class="w-max  top-[29%] absolute max-[560px]:right-[3%] right-0">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/Lp_positions.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] text-center leading-[150%] mt-2">LP Positions </h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm">Yield Farming</p>
-              </div>
-
-            </div>
-            <div class="w-max max-[560px]:left-[3%] top-[49%] absolute  ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/grow.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] leading-[150%] text-center mt-2"> Funding raised acquires
-                  Growth assets</h1>
-              </div>
-
-            </div>
-            <div style="transform: translate(-50%);" class="w-max absolute top-[49%] left-1/2">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/OHM.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px]  leading-[150%] text-center mt-2"> OHM Treasury Strategy
-                </h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Deposit + Earn</p>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div class="absolute mt-[10px] left-[100%]">
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-max absolute max-[560px]:right-[3%] right-0 top-[49%] ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img  src="./assets/images/svg/market.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[12px] items-center leading-[150%] text-center mt-2">Markets </h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm"> Trade + Arb (Fees)</p>
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto"
+            >
+              <h3
+                class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4"
+              >
+                Q4 2023
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">Front End upgrade</li>
+                <li class="list-disc leading-[150%]">
+                  INO [Initial NFT Offering]: Social Elastic NFT campaign
+                </li>
+                <li class="list-disc ml-5 leading-[150%]">
+                  Initial Olympus econOHMy Vaults:
+                </li>
+                <li class="list-disc ml-5 leading-[150%]">
+                  Olympus | Uniswap LP Vault
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Elastic Community Engagement: Onboard contributors to drive
+                  protocol development, partnerships, community development and
+                  begin governance activities
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex md:contents flex-row-reverse">
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4"
+              >
+                Q1 2024
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Elastic Research and Development: Explore additional vault
+                  strategies and develop risk and due-diligence procedures
+                  associated with strategy development and implementation
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Elastic Vault (Sub-Vaults): Begin exploring additional tokens
+                  to add to core Elastic Vault strategy
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Arbitrum Layer 2 yield strategy considerations
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Begin developing comprehensive tokenomics for $EFT (Elastic
+                  Protocol governance token)
+                </li>
+                <li class="list-disc leading-[150%]">
+                  First $EEFI Bonds Program [Bond Protocol] (beta): treasury
+                  bolster fundraise
+                </li>
+              </ul>
+            </div>
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div
+                    class="absolute mt-[10px] max-md:left-[100%] left-[-100%]"
+                  >
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-max absolute  right-[53%] top-[69%] ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/yield.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">Yield From  Growth Assets</h1>
+          </div>
+          <div class="flex md:contents">
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div class="absolute mt-[10px] left-[100%]">
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-max absolute right-[17.5%] top-[69%] ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] items-center pt-[20px]items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/yieldTo.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[125px] max-[530px]:text-[12px] text-center mt-2">Fees. Revenue. Yield to Treasury</h1>
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto"
+            >
+              <h3
+                class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4"
+              >
+                Q2 2024
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Gearbox | OHM [Perp-Leverage] Vault
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Bond Protocol (Bonding) Vault
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Future Strategy (vote): Real Yield GMX | GPL Vault
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Future Strategy (vote): Elastic Options Vault (sub-vault)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex md:contents flex-row-reverse">
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4"
+              >
+                Q3 2024
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Establish DAO to govern Elastic Finance and fully decentralize
+                  protocol
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Elastic Yield Alliance (Strategic Yield Strategy Partners):
+                  begin governance vote for Multi-chain yield strategies
+                </li>
+              </ul>
+            </div>
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div
+                    class="absolute mt-[10px] max-md:left-[100%] left-[-100%]"
+                  >
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-max absolute right-[35%] top-[89.5%] ">
-              <div style="box-shadow: 4.33px 4.33px 16.55px 0px #FFFFFF42;
-" class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px]  h-[130px]">
-                <img src="./assets/images/svg/fire.svg" loading="eager" alt="lock">
-                <h1 class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[12px] text-center mt-2">EEFI Furnace </h1>
-                <p class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[10px] text-sm">Buy + Burn EEFI</p>
+          </div>
+          <div class="flex md:contents">
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div class="absolute mt-[10px] left-[100%]">
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto"
+            >
+              <h3
+                class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4"
+              >
+                Q4 2024
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Community voted Yield Strategy 1 (governance)
+                </li>
+                <li class="list-disc leading-[150%]">
+                  $EEFI Borrowing and Lending Partnership
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex md:contents flex-row-reverse">
+            <div
+              class="relative py-[29px] px-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-1 col-end-5 max-md:ml-7 mr-auto md:mr-0 md:ml-auto"
+            >
+              <h3
+                class="text-lg font-semibold lg:text-xl Plus_jakarta_font text-white mb-4"
+              >
+                Q1 2025
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Community voted Yield Strategy 2 (governance)
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Olympus RBS-OHM Real Yield Vault (strategy)
+                </li>
+                <li class="list-disc leading-[150%]">
+                  Launch EFT governance token Airdrop
+                </li>
+              </ul>
+            </div>
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div class="w-1 h-full bg-[#4273FF]"></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div
+                    class="absolute mt-[10px] max-md:left-[100%] left-[-100%]"
+                  >
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:contents">
+            <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+              <div class="flex items-center justify-center w-0.5 h-full">
+                <div
+                  class="w-1 max-md:-translate-y-8 h-full bg-[#4273FF]"
+                ></div>
+              </div>
+              <div
+                class="absolute w-6 h-6 left-[-11.5px] -mt-3 rounded-full top-[5%]"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/images/svg/roadmap_dote.svg"
+                    alt="roadmap"
+                    class="top-[5%] absolute"
+                  />
+                  <div class="absolute mt-[10px] left-[100%]">
+                    <div class="w-[31px] flex justify-between">
+                      <span class="flex bg-[#4273FF] h-01 w-1"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-2"></span>
+                      <span class="flex bg-[#4273FF] h-0.5 w-1"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative p-4 max-[1140px]:mb-6 text-gray-800 border max-w-[373px] border-solid border-[#1643C3] rounded-xl col-start-6 col-end-10 max-md:ml-7 mr-auto"
+            >
+              <h3
+                class="text-lg font-semibold text-white Plus_jakarta_font lg:text-xl mb-4"
+              >
+                Q2 2025
+              </h3>
+              <ul class="text-white ml-5">
+                <li class="list-disc leading-[150%]">
+                  Hand over Elastic Finance DAO to Community: Complete
+                  decentralization of Elastic Finance DAO, its treasury, its
+                  yield strategies and community governance
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      id="about"
+      style="background-image: url(./assets/images/WebP/footer_bg_images.webp)"
+      x
+      class="max-w-[1920px] -mt-1 bg-cover py-[6px] bg-no-repeat mx-auto"
+    >
+      <div class="container">
+        <div class="flex flex-wrap justify-center items-center">
+          <div
+            class="w-6/12 max-[1140px]:w-full max-[1140px]:pt-[150px] max-lg:pt-[70px] max-[1140px]:flex max-[1140px]:flex-col max-lg:pb-[50px] max-md:pt-[75px] max-md:pb-[30px] max-[1140px]:pb-[150px] max-lg:px-5 pt-[175.5px] pb-[185.5px]"
+          >
+            <h1
+              class="leading-[120%] mb-11 max-md:mb-8 max-sm:mb-5 lg:max-w-[542px] font-extrabold text-white text-[46px] Neue_Machina_Ultra_bold max-lg:text-4xl max-sm:text-[28px]"
+            >
+              (E,E) Game Theory: An UPGRADE from (3,3)
+            </h1>
+            <p
+              class="leading-[160%] text-white lg:max-w-[515px] text-base max-sm:text-sm"
+            >
+              <i>
+                Remember (3,3) at its core was about social coordination. Or,
+                people working together to achieve a common outcome or goal.
+                (E,E) is the same. But with (E,E) people are working together
+                not to grow a robust treasury that would back a decentralized
+                stablecoin but instead to establish the first ever decentralized
+                amplified yield token… $EEFI. A token that can produce yield in
+                any market condition.
+              </i>
+            </p>
+            <p
+              class="leading-[160%] text-white lg:max-w-[515px] text-base max-sm:text-sm mt-2 max-lg:mt-4"
+            >
+              <i>
+                To achieve this (E,E) has everyone work together by interacting
+                with and supporting its ecosystem flywheel: Vaults, Bonds,
+                Markets and other components. Interaction with the (E,E)
+                Flywheel will help build a treasury of what we term high quality
+                “growth assets”. Assets that are revenue bearing, interest
+                bearing, Real Yield bearing or Rebase bearing. Where the
+                ‘growth’ aka the yields of these assets are used to act as long
+                term decentralized leverage on EEFI’s value. This is (E,E). This
+                is sustainable. This is the UPGRADE.
+              </i>
+            </p>
+          </div>
+          <div class="w-6/12 max-[1140px]:pb-[60px] max-[1140px]:w-full">
+            <div
+              class="max-w-[530px] translate-y-[-50px] max-[530px]:max-w-[333px] min-h-[815px] mx-auto relative"
+            >
+              <p
+                class="font-extrabold leading-[120%] text-sm max-sm:text-xs absolute text-white top-[21%] max-sm:top-[23%] left-[52%]"
+              >
+                Interact
+              </p>
+              <img
+                src="./assets/images/svg/border_line_1.svg"
+                loading="eager"
+                alt="svg_line_1"
+                class="absolute left-1/2 top-[19%] max-[530px]:hidden"
+              />
+              <img
+                src="./assets/images/svg/border_line_2.svg"
+                loading="eager"
+                alt="border_line_2"
+                class="absolute top-[25%] left-1/2 max-[530px]:hidden"
+                style="transform: translate(-50%)"
+              />
+              <img
+                src="/assets/images/svg/border_line_3.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[25.5%] left-[14%] max-[530px]:hidden"
+              />
+              <img
+                src="./assets/images/svg/border_line_8.svg"
+                loading="eager"
+                alt="border_line_8"
+                class="absolute top-[22%] left-[16%] max-[530px]:block hidden"
+              />
+              <img
+                src="/assets/images/svg/border_line_3.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[25.5%] right-[14%] max-[530px]:hidden"
+              />
+              <img
+                src="/assets/images/svg/border_line_4.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[45%] left-[14%]"
+              />
+              <img
+                src="/assets/images/svg/border_line_4.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[45%] left-1/2"
+              />
+              <img
+                src="/assets/images/svg/border_line_4.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[45%] right-[14%]"
+              />
+              <img
+                src="./assets/images/svg/border_line_3.svg"
+                loading="eager"
+                alt="border_line_3"
+                class="absolute top-[35%] right-[32.5%] rotate-90"
+              />
+              <img
+                src="./assets/images/svg/border_line_5.svg"
+                loading="eager"
+                alt="border_line_5"
+                class="absolute top-[61%] left-[15%] max-[530px]:w-[52px] max-[530px]:top-[64%] max-[530px]:left-[18%]"
+              />
+              <img
+                src="./assets/images/svg/border_line_6.svg"
+                loading="eager"
+                alt="border_line_6"
+                class="absolute top-[61%] right-[15%] w-[189px] max-[530px]:w-[118px] max-[530px]:top-[64%] max-[530px]:right-[16.5%]"
+              />
+              <img
+                src="./assets/images/svg/border_line_7.svg"
+                loading="eager"
+                alt="border_line_7"
+                class="absolute top-[81%] left-[30%] max-[530px]:w-[119px] max-[530px]:top-[84%] max-[530px]:left-[32%]"
+              />
+              <div
+                style="transform: translate(-50%)"
+                class="left-[50%] top-[8%] max-sm:top-[11%] rounded bg-white absolute flex justify-center items-center min-h-[93px]"
+              >
+                <div
+                  class="min-h-[80px] min-w-[116px] mx-[6.5px] rounded flex justify-center items-center flex-col bg-[#1643C3]"
+                >
+                  <h1
+                    class="font-extrabold text-2xl max-lg:text-xl ff-neue-machina leading-[120%] text-white text-center"
+                  >
+                    YOU
+                  </h1>
+                  <p class="text-white text-sm leading-[160%]">(Flywheel)</p>
+                </div>
+              </div>
+              <div class="w-max absolute top-[29%] max-[560px]:left-[3%]">
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/EEFI_Bonds.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="EEFI_Bonds"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] text-center leading-[150%] mt-2"
+                  >
+                    EEFI Bonds
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] text-sm"
+                  >
+                     Purchase. Lock up. Get Discount
+                  </p>
+                </div>
+              </div>
+              <div
+                style="transform: translate(-50%)"
+                class="w-max absolute top-[29%] left-1/2"
+              >
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/lock.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] text-center leading-[150%] mt-2"
+                  >
+                    Vault
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] px-3 text-sm"
+                  >
+                     Deposit + Earn
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-max top-[29%] absolute max-[560px]:right-[3%] right-0"
+              >
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/Lp_positions.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] text-center leading-[150%] mt-2"
+                  >
+                    LP Positions
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] text-sm"
+                  >
+                    Yield Farming
+                  </p>
+                </div>
+              </div>
+              <div class="w-max max-[560px]:left-[3%] top-[49%] absolute">
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/grow.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] leading-[150%] text-center mt-2"
+                  >
+                    Funding raised acquires Growth assets
+                  </h1>
+                </div>
+              </div>
+              <div
+                style="transform: translate(-50%)"
+                class="w-max absolute top-[49%] left-1/2"
+              >
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/OHM.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] leading-[150%] text-center mt-2"
+                  >
+                    OHM Treasury Strategy
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] text-sm"
+                  >
+                     Deposit + Earn
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-max absolute max-[560px]:right-[3%] right-0 top-[49%]"
+              >
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[15px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/market.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base max-[530px]:text-[10px] px-[6px] items-center leading-[150%] text-center mt-2"
+                  >
+                    Markets
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] text-sm"
+                  >
+                     Trade + Arb (Fees)
+                  </p>
+                </div>
+              </div>
+              <div class="w-max absolute right-[53%] top-[69%]">
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/yield.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[10px] px-[6px] text-center mt-2"
+                  >
+                    Yield From  Growth Assets
+                  </h1>
+                </div>
+              </div>
+              <div class="w-max absolute right-[17.5%] top-[69%]">
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[17px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/yieldTo.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base leading-[150%] max-[530px]:text-[10px] px-[6px] text-center mt-2"
+                  >
+                    Fees. Revenue. Yield to Treasury
+                  </h1>
+                </div>
+              </div>
+              <div class="w-max absolute right-[35%] top-[89.5%]">
+                <div
+                  style="box-shadow: 4.33px 4.33px 16.55px 0px #ffffff42"
+                  class="bg-white rounded-[5.2px] flex flex-col max-[530px]:pt-[11px] pt-[20px] items-center w-[160px] max-[560px]:max-w-[150px] max-[530px]:max-w-[100px] h-[130px]"
+                >
+                  <img
+                    src="./assets/images/svg/fire.svg"
+                    loading="eager"
+                    class="max-w-[28px]"
+                    alt="lock"
+                  />
+                  <h1
+                    class="Neue_Machina_Ultra_bold text-base leading-[150%] max-w-[122px] max-[530px]:text-[10px] px-[6px] text-center mt-2"
+                  >
+                    EEFI Furnace
+                  </h1>
+                  <p
+                    class="max-w-[123px] mx-auto leading-[120%] mt-1 text-center max-[530px]:text-[8px] text-sm"
+                  >
+                    Buy + Burn EEFI
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="./assets/js/app.js"></script>
-</body>
+    </footer>
+
+    <script>
+      const navmenu = () => {
+        document.getElementById("mobile_view").classList.toggle("max-lg:top-0");
+        document
+          .getElementById("mobile_view")
+          .classList.toggle("max-lg:right-0");
+        document.getElementById("nav_line").classList.toggle("rotate-45");
+        document.getElementById("nav_line").classList.toggle("after:rotate-90");
+        document
+          .getElementById("nav_line_out_side")
+          .classList.toggle("translate-x-6");
+        document
+          .getElementById("nav_line_out_side_1")
+          .classList.toggle("translate-x-6");
+        document.body.classList.toggle("overflow-hidden");
+      };
+    </script>
+  </body>
 </html>
